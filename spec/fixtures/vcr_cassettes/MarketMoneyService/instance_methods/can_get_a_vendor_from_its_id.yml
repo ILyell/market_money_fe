@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/vendors/54849
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"ba4c359d13756aec82eebcd4001a2da2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e288bcb5-bbb1-4bfa-8341-f40dfdffb4b1
+      X-Runtime:
+      - '0.049602'
+      Server-Timing:
+      - sql.active_record;dur=13.13, start_processing.action_controller;dur=0.07,
+        instantiation.active_record;dur=2.08, process_action.action_controller;dur=13.14
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"54849","type":"vendor","attributes":{"name":"Organic
+        Farms","description":"This vendor specializes in selling fresh, organic fruits
+        and vegetables grown on their farm. They may also sell jams, jellies, and
+        pickles made from their produce.","contact_name":"Msgr. Floyd Cole","contact_phone":"390.398.6702","credit_accepted":false}}}'
+  recorded_at: Fri, 08 Sep 2023 19:40:31 GMT
+recorded_with: VCR 6.2.0
