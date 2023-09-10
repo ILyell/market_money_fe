@@ -16,7 +16,8 @@ RSpec.describe "Market index page", type: :feature do
             end
 
             it 'Has a button to an individial markets show page', :vcr do
-                markets = MarketFacade.new.markets
+                params = {}
+                markets = MarketFacade.new(params).markets
                 visit markets_path
 
                 within first "#market" do
