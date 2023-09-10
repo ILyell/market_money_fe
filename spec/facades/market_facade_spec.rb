@@ -4,12 +4,13 @@ RSpec.describe MarketFacade do
     describe '#instance methods', :vcr do
 
         before(:each) do
-            params = {market_id: 322458}
-            @facade = MarketFacade.new(params)
+            @params = {id: 322458}
         end
 
         it 'Creates market objects' do
-            markets = @facade.markets
+            facade = MarketFacade.new(@params)
+
+            markets = facade.markets
             
             expect(markets).to be_a Array
             
@@ -19,11 +20,14 @@ RSpec.describe MarketFacade do
         end
         
         it 'Creates an individual market' do
-            expect(@facade.market).to be_a Market
+            facade = MarketFacade.new(@params)
+            expect(facade.market).to be_a Market
         end
         
         it 'Creates vendors from an associated market' do
-            vendors = @facade.vendors
+            facade = MarketFacade.new(@params)
+
+            vendors = facade.vendors
 
             expect(vendors).to be_a Array
 

@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ebdb9f3b-38d3-45f1-b7a5-3fd2c3d10eb6
+      - 5f59820b-f09b-4be3-99c4-917c3865134b
       X-Runtime:
-      - '0.005577'
+      - '0.004968'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.36, instantiation.active_record;dur=0.02,
-        process_action.action_controller;dur=1.30
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.48, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.93
       Transfer-Encoding:
       - chunked
     body:
@@ -53,5 +53,5 @@ http_interactions:
         Farms","description":"This vendor specializes in selling fresh, organic fruits
         and vegetables grown on their farm. They may also sell jams, jellies, and
         pickles made from their produce.","contact_name":"Msgr. Floyd Cole","contact_phone":"390.398.6702","credit_accepted":false}}}'
-  recorded_at: Sun, 10 Sep 2023 22:46:35 GMT
+  recorded_at: Sun, 10 Sep 2023 23:54:06 GMT
 recorded_with: VCR 6.2.0

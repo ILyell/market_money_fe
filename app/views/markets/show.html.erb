@@ -1,0 +1,17 @@
+<section>
+<div id='name'>
+<%= @market.name %>
+</div>
+<br>
+<div id='address'>
+<%= "#{@market.street} #{@market.city}, #{@market.state}, #{@market.zip}" %>
+</div>
+<br>
+<div id="vendors">
+<% @vendors.each do |vendor| %>
+    <div id='vendor'>
+    <br>
+    <%= link_to "#{vendor.name}", vendor_path(vendor.id) %>
+    </div>
+<% end %>
+</div>

@@ -20,12 +20,12 @@ class MarketFacade
     end
 
     def market
-        response = service.get_market(@params[:market_id])
+        response = service.get_market(@params[:id])
         Market.new(response[:data])
     end
 
     def vendors
-        response = service.get_market_vendors(@params[:market_id])
+        response = service.get_market_vendors(@params[:id])
         response[:data].map do |vendor|
             Vendor.new(vendor)
         end

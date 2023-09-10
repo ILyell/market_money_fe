@@ -2,11 +2,14 @@ require 'rails_helper'
 
 RSpec.describe Vendor do
     it 'Exist and holds attributes' do
-        vendor_hash = { name: "Vendor Name",
-                        description: "A Vendor",
-                        contact_name: "vendor owner",
-                        contact_phone: "4234234234",
-                        credit_accepted: true 
+        vendor_hash = { id: 12,
+                        attributes: {
+                            name: "Vendor Name",
+                            description: "A Vendor",
+                            contact_name: "vendor owner",
+                            contact_phone: "4234234234",
+                            credit_accepted: true 
+                        }
                     }
 
         vendor = Vendor.new(vendor_hash)
