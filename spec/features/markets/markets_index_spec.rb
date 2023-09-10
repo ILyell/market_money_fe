@@ -15,14 +15,14 @@ RSpec.describe "Market index page", type: :feature do
                 end
             end
 
-            it 'Has a button to an individial markets show page' do
+            it 'Has a button to an individial markets show page', :vcr do
+                markets = MarketFacade.new.markets
                 visit markets_path
 
                 within first "#market" do
-                    expect(page).to have_button("Market Details")
-                    click_button "Market Details"
-
-                    expect(current_path).to eq(market_path(market))
+                    expect(page).to have_link("Market Details")
+                    click_link "Market Details"
+                    expect(current_path).to eq(market_path(markets.first.id))
                 end
             end
         end
