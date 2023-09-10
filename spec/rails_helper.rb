@@ -15,6 +15,9 @@ VCR.configure do |config|
   config.hook_into :webmock
   config.configure_rspec_metadata!
 end
+require 'simplecov'
+SimpleCov.start
+
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
