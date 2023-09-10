@@ -14,7 +14,7 @@ class MarketFacade
 
     def markets
         markets = service.get_markets
-        markets[:data].each do |market|
+        markets[:data].map do |market|
             Market.new(market)
         end
     end

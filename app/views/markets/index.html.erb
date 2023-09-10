@@ -1,0 +1,16 @@
+<section>
+    <p>Avalible markets<p>
+    <% @facade.markets.each do |market| %>
+        <div id='market'>
+            <div id='name'>
+                <%= market.name %>
+            </div>
+            <div id='city'>
+                <%= market.city %>
+            </div>
+            <div id='state'>
+                <%= market.state %>
+            </div>
+        </div>
+    <% end %>
+</section>
