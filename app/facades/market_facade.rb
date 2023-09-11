@@ -4,10 +4,6 @@ class MarketFacade
         @params = params
     end
 
-    def markets
-
-    end
-
     def service
         @_market_service ||= MarketMoneyService.new
     end
