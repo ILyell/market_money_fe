@@ -7,10 +7,10 @@ RSpec.describe "Vendor Show Page", type: :feature do
 
                 visit vendor_path(55823)
 
-                expect(page).to have_content("blah")
-                expect(page).to have_content("blah")
-                expect(page).to have_content("blah")
-                expect(page).to have_content("blah")
+                expect(page).to have_content("The Charcuterie Corner")
+                expect(page).to have_content("Contact name: Claudie Langworth III, Phone Number: 1-147-179-9747")
+                expect(page).to have_content("Accepts credit? false")
+                expect(page).to have_content("Vendor selling a variety of artisanal cured meats and sausages.")
 
             end
         end

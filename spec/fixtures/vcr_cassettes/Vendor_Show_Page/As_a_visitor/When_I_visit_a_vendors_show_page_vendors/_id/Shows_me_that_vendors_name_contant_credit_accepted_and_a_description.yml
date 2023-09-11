@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v0/markets/322458/vendors
+    uri: http://localhost:3000/api/v0/vendors/55823
     body:
       encoding: US-ASCII
       string: ''
@@ -35,22 +35,22 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"bdaccad93f7285807716ef780f572aa1"
+      - W/"52a3a848e065d8df4195850a9c1f5377"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1cd7a2aa-9a8d-4ebe-8f73-cd259c6dd3da
+      - 112e9400-049d-47fe-b233-eb4e8bda6062
       X-Runtime:
-      - '0.006123'
+      - '0.004755'
       Server-Timing:
-      - start_processing.action_controller;dur=0.04, sql.active_record;dur=1.12, instantiation.active_record;dur=0.04,
-        process_action.action_controller;dur=1.96
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.36, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.80
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"55823","type":"vendor","attributes":{"name":"The Charcuterie
+      string: '{"data":{"id":"55823","type":"vendor","attributes":{"name":"The Charcuterie
         Corner","description":"Vendor selling a variety of artisanal cured meats and
-        sausages.","contact_name":"Claudie Langworth III","contact_phone":"1-147-179-9747","credit_accepted":false}}]}'
-  recorded_at: Mon, 11 Sep 2023 00:21:23 GMT
+        sausages.","contact_name":"Claudie Langworth III","contact_phone":"1-147-179-9747","credit_accepted":false}}}'
+  recorded_at: Mon, 11 Sep 2023 00:21:22 GMT
 recorded_with: VCR 6.2.0

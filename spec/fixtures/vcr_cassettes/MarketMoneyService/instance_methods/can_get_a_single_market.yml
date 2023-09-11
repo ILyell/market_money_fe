@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9f7b052a-15aa-40b6-afce-a8878073d31d
+      - 4a286145-f00a-4122-8248-7433a239f532
       X-Runtime:
-      - '0.006252'
+      - '0.006135'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.91, instantiation.active_record;dur=0.03,
-        process_action.action_controller;dur=1.75
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=1.07, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=1.97
       Transfer-Encoding:
       - chunked
     body:
@@ -52,5 +52,5 @@ http_interactions:
       string: '{"data":{"id":"322458","type":"market","attributes":{"name":"14\u0026U
         Farmers'' Market","street":"1400 U Street NW ","city":"Washington","county":"District
         of Columbia","state":"District of Columbia","zip":"20009","lat":"38.9169984","lon":"-77.0320505","vendor_count":1}}}'
-  recorded_at: Sun, 10 Sep 2023 23:54:06 GMT
+  recorded_at: Mon, 11 Sep 2023 00:21:23 GMT
 recorded_with: VCR 6.2.0
